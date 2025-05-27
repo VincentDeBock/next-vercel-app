@@ -26,7 +26,7 @@ export default function Home() {
           <div className="text-gray-600 mb-8">
             <p className="text-lg mb-4">
               Designers have portfolios, Engineers have Leetcode, PMs have... case questions? 
-              Here's how to level the playing field with the interview preppers.
+              Here&apos;s how to level the playing field with the interview preppers.
             </p>
             <div className="flex items-center gap-2 text-sm">
               <span>Aakash Gupta</span>
@@ -70,7 +70,7 @@ export default function Home() {
               This Actually Presents an Opportunity
             </h2>
             <p>
-              But, here's the thing: the job market (in all geographies) for PMs is 
+              But, here&apos;s the thing: the job market (in all geographies) for PMs is 
               <strong> very tough</strong> right now.
             </p>
 
@@ -83,7 +83,7 @@ export default function Home() {
             </blockquote>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">
-              Tested in Today's Market
+              Tested in Today&apos;s Market
             </h2>
             <p>
               → This hypothesis encouraged me to <strong>test the portfolio advice</strong> 
