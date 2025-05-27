@@ -2,102 +2,106 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="max-w-3xl mx-auto px-4 py-12">
+        {/* Header */}
+        <header className="text-center mb-16">
+          <h1 className="text-4xl font-bold mb-4">Product Growth</h1>
+          <div className="flex justify-center gap-4">
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Subscribe
+            </button>
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Sign in
+            </button>
+          </div>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Article */}
+        <article className="prose prose-lg mx-auto">
+          <h1 className="text-3xl font-bold mb-6">
+            How to make a product manager portfolio (to actually land your dream job)
+          </h1>
+
+          <div className="text-gray-600 mb-8">
+            <p className="text-lg mb-4">
+              Designers have portfolios, Engineers have Leetcode, PMs have... case questions? 
+              Here's how to level the playing field with the interview preppers.
+            </p>
+            <div className="flex items-center gap-2 text-sm">
+              <span>Aakash Gupta</span>
+              <span>•</span>
+              <span>Jun 01, 2024</span>
+              <span>•</span>
+              <span>Paid</span>
+            </div>
+          </div>
+
+          {/* Share buttons */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Copy link
+            </button>
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Facebook
+            </button>
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Email
+            </button>
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              Notes
+            </button>
+            <button className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-50">
+              More
+            </button>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-6">
+            <p>
+              Designers have been making portfolios for as long as design has been a profession.
+            </p>
+            <p>
+              For PMs, the portfolio is a much newer invention. And its adoption still varies widely. 
+              Fewer than one in six have one:
+            </p>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">
+              This Actually Presents an Opportunity
+            </h2>
+            <p>
+              But, here's the thing: the job market (in all geographies) for PMs is 
+              <strong> very tough</strong> right now.
+            </p>
+
+            <blockquote className="border-l-4 border-gray-300 pl-4 italic my-6">
+              I saw a <strong>brand new technique</strong> last week. The candidate had a 
+              <strong> portfolio</strong>… like a design portfolio, but for PM.
+              <br /><br />
+              It was awesome. I <strong>ended up spending nearly an hour reading her portfolio</strong> 
+              before the interview and got to know her well.
+            </blockquote>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">
+              Tested in Today's Market
+            </h2>
+            <p>
+              → This hypothesis encouraged me to <strong>test the portfolio advice</strong> 
+              in the market with 5 members of our Slack community.
+            </p>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-12 p-8 bg-gray-50 rounded-lg text-center">
+            <h3 className="text-xl font-bold mb-4">
+              Continue Reading with a 7-day free trial
+            </h3>
+            <button className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+              Start Trial
+            </button>
+          </div>
+        </article>
+      </div>
+    </main>
   );
 }
